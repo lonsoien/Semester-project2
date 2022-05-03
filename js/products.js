@@ -1,6 +1,6 @@
-import { productUrl } from "./api.js";
+import { baseUrl } from "./api.js";
 
-const productsUrl = productUrl + "products"; 
+const productsUrl = baseUrl + "products"; 
 
 (async function () {
     const resultContainer = document.querySelector(".container-products"); 
@@ -15,9 +15,9 @@ const productsUrl = productUrl + "products";
         json.forEach(function (product) {
             resultContainer.innerHTML += `<a class="product" href="productdetail.html?id=${product.id}">
             <h4>${product.title}</h4>
-            <img src=http://semesterproject2-louise.herokuapp.com/products${product.image.url} alt="${product.image.alternativeText}">
+            <img src="http://semesterproject2-louise.herokuapp.com/products/"${product.image.id} alt="${product.image.url}">
             <p>${product.description}</p>
-            <p>${product.price}</p>
+            <p>Price: ${product.price}</p>
             </a>`; 
             console.log(product);
         });
