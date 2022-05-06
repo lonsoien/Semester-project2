@@ -19,7 +19,6 @@ async function getProducts(productsUrl) {
             <p>${product.description}</p>
             <p>Price: ${product.price}</p>
             </a>`; 
-            console.log(product);
         });
     } catch (error){
         console.log(error); 
