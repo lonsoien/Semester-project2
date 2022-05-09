@@ -1,2 +1,1 @@
-
- const baseUrl = "http://semesterproject2-louise.herokuapp.com/products/"; 
+const baseUrl = "http://semesterproject2-louise.herokuapp.com/"; 
