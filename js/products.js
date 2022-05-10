@@ -1,6 +1,6 @@
-// import { baseUrl } from "./api.js";
+ import { baseUrl } from "./api.js";
 
-const productsUrl = "http://semesterproject2-louise.herokuapp.com/products/";
+const productsUrl = baseUrl + "products/"; 
 
 const resultContainer = document.querySelector(".container-products"); 
 
