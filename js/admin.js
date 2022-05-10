@@ -44,10 +44,12 @@ async function userLogin(username, password) {
         console.log(json); 
 
         if (json.user) {
-            displayMessage("success", "Successfylly logged in", ".message-container"); 
+         //   displayMessage("success", "Successfylly logged in", ".message-container"); 
 
             saveToken(json.jwt); 
             saveUser(json.user); 
+
+            location.href = "/"; 
         }
 
         if(json.error) {
