@@ -1,9 +1,10 @@
-import { baseUrl } from "./settings/api.js";
-import { displayMessage } from "./components/displayMessage.js";
+import displayMessage from "./components/displayMessage.js";
+import { saveToken, saveUser } from "./utils/storage.js";
+import { baseUrl } from "./api.js";
 
 const form = document.querySelector("form");
-const username = document.querySelector("#username");
-const password = document.querySelector("#password");
+const username = document.querySelector("#exampleInputEmail1");
+const password = document.querySelector("#exampleInputPassword1");
 const message = document.querySelector(".message-container");
 
 form.addEventListener("submit", submitForm);
@@ -32,13 +33,26 @@ async function userLogin(username, password) {
         method: "POST",
         body: data,
         headers: {
-            "Content-Type": "application/json"
-        }
+            "Content-Type": "application/json",
+        },
     }; 
+
     try {
         const response = await fetch(url, options); 
         const json = await response.json();
-        console.log(json);
+        
+        console.log(json); 
+
+        if (json.user) {
+            displayMessage("success", "Successfylly logged in", ".message-container"); 
+
+            saveToken(json.jwt); 
+            saveUser(json.user); 
+        }
+
+        if(json.error) {
+            displayMessage("warning", "Invalid login details", ".message-container"); 
+        }
     }
     catch(error) {
         console.log(error); 
