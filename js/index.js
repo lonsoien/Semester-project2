@@ -1,3 +1,4 @@
+// import { baseUrl } from "./api";
 
 const bannerImg = document.querySelector(".hero-banner"); 
 
@@ -15,4 +16,31 @@ async function fetchBanner() {
     }
 
     fetchBanner(); 
+
+    const featuredUrl = "http://semesterproject2-louise.herokuapp.com/products"; 
+
+    const featuredContainer = document.querySelector(".featured-container");
+
+    async function getFeatured() {
+
+        try {
+            const response = await fetch(featuredUrl);
+            const json = await response.json(); 
+            console.log(json); 
+
+            for (let i = 0; i < json.length; i++) {
+                if(json[i].featured === true) {
+                    featuredContainer.innerHTML += `<div class="featured">
+                    ${json[i].featured}</div>`; 
+                }
+            }
+
+        } catch (error){
+            console.log(error); 
+        }
+    }
+    getFeatured();
+
+
+
 
