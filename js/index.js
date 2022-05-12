@@ -30,10 +30,13 @@ async function fetchBanner() {
 
             for (let i = 0; i < json.length; i++) {
                 if(json[i].featured === true) {
-                    featuredContainer.innerHTML += `<div class="featured">
-                    ${json[i].featured}</div>`; 
-                }
+                featuredContainer.innerHTML += `<a class="featured" href="products.html?id">
+                <h4>${json[i].title}</h4>
+                <img src=${json[i].image.url}>
+                <p>Price: ${json[i].price}</p>
+                </a>`; 
             }
+        }
 
         } catch (error){
             console.log(error); 
