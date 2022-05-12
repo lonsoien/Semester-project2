@@ -2,7 +2,7 @@ import displayMessage from "./components/displayMessage.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import { baseUrl } from "./api.js";
 
-const form = document.querySelector("form");
+const form = document.querySelector(".form");
 const username = document.querySelector("#exampleInputEmail1");
 const password = document.querySelector("#exampleInputPassword1");
 const message = document.querySelector(".message-container");
@@ -44,7 +44,7 @@ async function userLogin(username, password) {
         console.log(json); 
 
         if (json.user) {
-         //   displayMessage("success", "Successfylly logged in", ".message-container"); 
+           displayMessage("success", "Successfylly logged in", ".message-container"); 
 
             saveToken(json.jwt); 
             saveUser(json.user); 
