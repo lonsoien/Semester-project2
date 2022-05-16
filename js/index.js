@@ -44,6 +44,10 @@ async function fetchBanner() {
     }
     getFeatured();
 
+    document.getElementById("view").onclick = function () {
+        location.href = "products.html";
+    };
+
 
 
 
