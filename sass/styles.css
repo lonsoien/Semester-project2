@@ -1,9 +1,10 @@
 
-/* Virables */
+/* Variables */
 
-    box-sizing: border-box; {
+* {
+    box-sizing: border-box;
     margin: 0px;
-}
+  }
 
 
 /* Home Page*/
@@ -69,6 +70,19 @@
 
 
 /* Products Page*/
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    grid-gap: 20px;
+    align-items: center;  
+}
+
+a.products {
+    display: grid;
+    grid-template-columns: 200px;
+}
 
 .container-products img {
     height: 250px;
