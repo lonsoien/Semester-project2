@@ -29,14 +29,87 @@
       border-radius: 15px 15px 15px 15px;
       width: 500px;
       height: 300px;
+      margin-left: -60px;
+  }
+
+  .iconic-img {
+      border-radius: 15px 15px 15px 15px;
+      margin-left: 30px;
   }
 
   .col {
+      text-align: center;
       margin-top: 40px;
+      margin-bottom: 50px;
   }
 
   .iconic-text {
+      font-size: 25px;
       margin-top: 50px;
+  }
+
+  .news-link {
+      text-align: center;
+  }
+
+  h3 a {
+      color: black;
+  }
+
+  .featured-container {
+      text-align: center;
+      display: flex;
+      margin: 50px;
+  }
+
+  a.featured {
+      background-color: black;
+      padding: 20px;
+      border-radius: 10px 10px 10px 10px;
+      text-align: center;
+      margin-left: 50px;
+  }
+
+  .featured-container img {
+    height: 250px;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .featured-container h4 {
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
+  }
+
+  .featured-container p {
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+  }
+
+  .btn-view {
+      text-align: center;
+      padding: 20px;
+      padding-bottom: 20px;
+  }
+
+  .view {
+      font-family: "Urbanist", Arial, sans-serif;
+      font-size: 20px;
+      background-color: yellow;
+      width: 160px;
+      height: 60px;
+      border-radius: 10px 10px 10px 10px;
+      border-style: none;
+      transition: width 1s;
+  }
+
+  .view:hover {
+      width: 250px;
   }
 
 
@@ -74,34 +147,40 @@
 .container-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 10px;
+    margin: 30px;
     grid-gap: 20px;
-    align-items: center;  
+    text-align: center;  
+    margin-top: 50px;
 }
 
 a.products {
+    text-align: center;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 350px;
+    margin-left: 40px;
 }
 
 .container-products img {
-    height: 250px;
-    width: 270px;
+    height: 300px;
+    width: 300px;
     margin: 10px;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 35px;
   }
   
   .container-products h4 {
     font-family: "Urbanist", Arial, sans-serif;
     font-size: 30px;
-    color: black;
-    margin-left: 30px;
+    color: white;
   }
   
   .container-products p {
     font-family: "Urbanist", Arial, sans-serif;
     font-size: 20px;
-    color: black;
+    color: white;
     margin: 10px;
   }
 
@@ -171,7 +250,7 @@ a.products {
   h2 {
     font-size: 30px;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     padding: 30px;
   }
 
