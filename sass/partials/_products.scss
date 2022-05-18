@@ -1,20 +1,41 @@
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px;
+  grid-gap: 20px;
+  text-align: center;  
+  margin-top: 50px;
+}
+
+a.products {
+  margin: 15px;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 350px;
+  margin-left: 40px;
+}
+
 .container-products img {
-  height: 250px;
-  width: 270px;
+  height: 300px;
+  width: 300px;
   margin: 10px;
   border-radius: 15px 15px 15px 15px;
+  margin-left: 35px;
 }
 
 .container-products h4 {
   font-family: "Urbanist", Arial, sans-serif;
   font-size: 30px;
-  color: black;
-  margin-left: 30px;
+  color: white;
 }
 
 .container-products p {
   font-family: "Urbanist", Arial, sans-serif;
   font-size: 20px;
-  color: black;
+  color: white;
   margin: 10px;
 }
+
