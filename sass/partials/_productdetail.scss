@@ -1,0 +1,45 @@
+
+.detailproducts {
+  margin: 15px;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.product-detail img {
+    height: 450px;
+    width: 450px;
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.product-detail h4 {
+    font-size: 30px;
+    color: white;
+}
+
+.product-detail p {
+  font-size: 25px;
+  color: white;
+  margin: 25px;
+}
+
+.product-detail a {
+    padding: 10px;
+}
+
+.link-back {
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.link-back:hover {
+    color: black;
+}
+

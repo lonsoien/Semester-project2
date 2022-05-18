@@ -144,6 +144,7 @@ h1 {
   font-size: 40px;
   text-align: center;
   margin: 20px;
+  margin-top: 30px;
 }
 
 h2 {
@@ -159,7 +160,7 @@ h2 {
 }
 
 body {
-  margin-top: 130px;
+  margin-top: 150px;
 }
 
 .container-products {
@@ -203,13 +204,6 @@ a.products {
   margin: 10px;
 }
 
-/* Detail products */
-.product-detail {
-  width: 300px;
-  height: 300px;
-  margin: 10px;
-}
-
 .form-group {
   width: 50%;
   padding: 10px;
@@ -247,6 +241,50 @@ a.products {
   border-color: green;
   color: white;
   background: green;
+}
+
+.detailproducts {
+  margin: 15px;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.product-detail img {
+  height: 450px;
+  width: 450px;
+  margin: 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.product-detail h4 {
+  font-size: 30px;
+  color: white;
+}
+
+.product-detail p {
+  font-size: 25px;
+  color: white;
+  margin: 25px;
+}
+
+.product-detail a {
+  padding: 10px;
+}
+
+.link-back {
+  font-family: "Urbanist", Arial, sans-serif;
+  font-size: 20px;
+  background-color: yellow;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.link-back:hover {
+  color: black;
 }
 
 /* @import "../scss/functions";
