@@ -1,3 +1,4 @@
+import { productsUrl } from "./api.js";
 
 const bannerImg = document.querySelector(".hero-banner"); 
 
@@ -16,7 +17,7 @@ async function fetchBanner() {
 
     fetchBanner(); 
 
-    const featuredUrl = "http://semesterproject2-louise.herokuapp.com/products"; 
+    const featuredUrl = productsUrl; 
 
     const featuredContainer = document.querySelector(".featured-container");
 

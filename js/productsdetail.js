@@ -17,7 +17,7 @@ console.log(detailProductsUrl);
 
         const detailContainer = document.querySelector(".product-detail");
 
-        detailContainer.innerHTML = `<div class="detailproducts">
+        detailContainer.innerHTML += `<div class="detailproducts">
         <h4>${details.title}</h4>
         <img src=${details.image.url}>
         <p>${details.description}</p>
