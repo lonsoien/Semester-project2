@@ -18,6 +18,10 @@ a.products {
   margin-left: 40px;
 }
 
+a.products:hover {
+  color: yellow;
+}
+
 .container-products img {
   height: 300px;
   width: 300px;
