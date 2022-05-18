@@ -13,7 +13,7 @@ async function getProducts(productsUrl) {
          
 
         json.forEach(function (product) {
-            resultContainer.innerHTML += `<a class="products" href="productdetail.html?id">
+            resultContainer.innerHTML += `<a class="products" href="productdetail.html?id=${product.id}">
             <h4>${product.title}</h4>
             <img src=${product.image.url}>
             <p>${product.description}</p>

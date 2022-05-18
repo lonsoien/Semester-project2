@@ -1,4 +1,3 @@
-// import { baseUrl } from "./api";
 
 const bannerImg = document.querySelector(".hero-banner"); 
 
