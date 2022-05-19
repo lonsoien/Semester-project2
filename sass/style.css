@@ -182,25 +182,6 @@ a.products {
   min-width: 350px;
 }
 
-/*.container-products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 30px;
-  grid-gap: 20px;
-  text-align: center;  
-  margin-top: 50px;
-}
-
-a.products {
-  margin: 15px;
-  text-align: center;
-  background-color: black;
-  border-radius: 10px 10px 10px 10px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 350px;
-  margin-left: 40px;
-} */
 a.products:hover {
   color: yellow;
 }
@@ -224,6 +205,17 @@ a.products:hover {
   font-size: 20px;
   color: white;
   margin: 10px;
+}
+
+a.products i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+}
+
+a.products i.fa {
+  color: yellow;
 }
 
 .form-group {
