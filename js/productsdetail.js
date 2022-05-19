@@ -1,4 +1,4 @@
-import { productsUrl } from "./api.js";
+import { productsUrl } from "./constans/api.js";
 
 const queryString = document.location.search; 
 
@@ -22,7 +22,7 @@ console.log(detailProductsUrl);
         <img src=${details.image.url}>
         <p>${details.description}</p>
         <p>Price: ${details.price}</p>
-        <a class="link-back" href="products.html">Back to Products</a>
+        <a class="link-back" href="products.html"><i class="fal fa-arrow-alt-left"></i>Back to Products</a>
         </div>`; 
 
         console.log(details); 

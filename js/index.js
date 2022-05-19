@@ -1,8 +1,9 @@
-import { productsUrl } from "./api.js";
+import { productsUrl } from "./constans/api.js";
+import { baseUrl } from "./constans/api.js";
 
 const bannerImg = document.querySelector(".hero-banner"); 
 
-const url = "http://semesterproject2-louise.herokuapp.com/home"; 
+const url = baseUrl + "home/"; 
 
 async function fetchBanner() {
         const response = await fetch(url);

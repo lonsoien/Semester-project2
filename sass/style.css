@@ -250,12 +250,12 @@ a.products:hover {
 }
 
 .detailproducts {
-  margin: 15px;
+  margin: 25px;
   text-align: center;
   background-color: black;
   border-radius: 10px 10px 10px 10px;
   padding: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 110px;
 }
 
 .product-detail img {
@@ -277,7 +277,9 @@ a.products:hover {
 }
 
 .product-detail a {
-  padding: 10px;
+  padding: 15px;
+  margin-top: 40px;
+  width: 200px;
 }
 
 .link-back {
@@ -287,6 +289,8 @@ a.products:hover {
   border-radius: 10px 10px 10px 10px;
   padding: 10px;
   margin: 10px;
+  float: left;
+  padding: 80px;
 }
 
 .link-back:hover {

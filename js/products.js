@@ -1,8 +1,9 @@
- import { baseUrl } from "./api.js";
+ import { baseUrl } from "./constans/api.js";
 
 const productsUrl = baseUrl + "products/"; 
 
 const resultContainer = document.querySelector(".container-products"); 
+const search = document.querySelector("#search"); 
 
 async function getProducts(productsUrl) {
 
@@ -25,3 +26,17 @@ async function getProducts(productsUrl) {
     }
 }
 getProducts(productsUrl);
+
+search.onkeyup = function (event) {
+    console.log(event); 
+}
+
+const searchValue = event.target.value.trim().toLowerCase(); 
+
+const filteredProducts = productsUrl.filter(function (product) {
+    if (product.title.toLowerCase().startsWith(searchValue)) {
+        return true; 
+    }
+}); 
+
+console.log(filteredProducts); 
