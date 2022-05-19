@@ -1,6 +1,6 @@
  import { baseUrl } from "./constans/api.js";
- import { searchProducts } from "./searchProducts.js";
- import { renderProduct } from "./renderedProducts.js";
+ import { searchProducts } from "./ui/searchProducts.js";
+ import { renderProduct } from "./ui/renderedProducts.js";
 
 const productsUrl = baseUrl + "products/"; 
 
