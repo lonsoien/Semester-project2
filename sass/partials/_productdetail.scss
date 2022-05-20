@@ -32,6 +32,10 @@
     width: 200px;
 }
 
+.cart {
+
+}
+
 .link-back {
     font-family: "Urbanist", Arial, sans-serif;
     font-size: 20px;
@@ -39,11 +43,12 @@
     border-radius: 10px 10px 10px 10px;
     padding: 10px;
     margin: 10px;
-    float: left;
-    padding: 80px;
+    transition: width 1s;
+    border-style: none;
 }
 
 .link-back:hover {
     color: black;
+    width: 200px;
 }
 

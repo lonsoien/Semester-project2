@@ -22,7 +22,7 @@ console.log(detailProductsUrl);
         <img src=${details.image.url}>
         <p>${details.description}</p>
         <p>Price: ${details.price}</p>
-        <a class="link-back" href="products.html"><i class="fal fa-arrow-alt-left"></i>Back to Products</a>
+        <button class="cart"ADD TO CART</button>
         </div>`; 
 
         console.log(details); 

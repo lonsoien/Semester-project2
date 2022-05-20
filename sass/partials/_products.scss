@@ -23,7 +23,7 @@ a.products:hover {
   width: 300px;
   margin: 10px;
   border-radius: 15px 15px 15px 15px;
-  margin-left: 35px;
+  margin-left: 10px;
 }
 
 .container-products h4 {
@@ -39,14 +39,36 @@ a.products:hover {
   margin: 10px;
 }
 
-a.products i {
+
+/*
+p.add {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  background-color: yellow;
+  color: black;
+  border-style: none;
+  width: 60px;
+  height: 40px;
+  transition: width 1s;
+}
+
+p.add {
+  top: 20px;
+  left: 30px;
+}
+
+/* p.add:hover {
+  width: 100px;
+} 
+
+.container-products i {
   position: absolute;
   right: 10px;
   top: 10px;
   font-size: 30px;
 }
 
-a.products i.fa {
+.container-products i.fa {
   color: yellow;
 }
 
