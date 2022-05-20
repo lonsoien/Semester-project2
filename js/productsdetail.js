@@ -1,4 +1,5 @@
 import { productsUrl } from "./constans/api.js";
+import { getExistingFavs } from "./utils/favsFunction.js"; 
 
 document.getElementById("link-back").onclick = function () {
         location.href = "products.html";
@@ -26,20 +27,56 @@ console.log(detailProductsUrl);
         <img src=${details.image.url}>
         <p>${details.description}</p>
         <p>Price: ${details.price}</p>
-        <button class="add-to-cart">ADD TO CART</button>
+        <button class="add-to-cart" data-title="${details.title}" data-image="${details.image.url}" data-price="${details.price}">ADD TO CART</button>
         </div>`; 
 
         console.log(details); 
 
-        const favButton = document.querySelector(".detailproducts button"); 
-        console.log(event); 
+        const favButton = document.querySelector(".detailproducts button");  
 
         favButton.addEventListener("click", handleClick); 
 
         function handleClick() {
-                console.log(event); 
+                this.classList.toggle("add-to-cart");
+                
+                const title = this.dataset.title;
+                const image = this.dataset.image;
+                const price = this.dataset.price; 
+                
+
+                const currentFavs = getExistingFavs();
+                
+                const productExists = currentFavs.find(function(fav) {
+                        return fav.title === title; 
+                }); 
+
+                if (productExists === undefined) {
+                        const product = {title: title, image: image, price: price};
+                        currentFavs.push(product);
+                        saveFavs(currentFavs);
+                }  
+                else {
+                        const newFavs = currentFavs.filter(fav => fav.title !== title);
+                        saveFavs(newFavs); 
+                }
         }
-        
+
+        function getExistingFavs () {
+                const favs = localStorage.getItem("favorites");
+                console.log(favs); 
+
+                if (favs === null) {
+                        return []; 
+                }
+                else {
+                        return JSON.parse(favs); 
+                }
+        }
+
+        function saveFavs(favs) {
+                localStorage.setItem("favorites", JSON.stringify(favs)); 
+        }
+
 
 })(); 
 
