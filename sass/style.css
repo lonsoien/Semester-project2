@@ -282,7 +282,7 @@ p.add {
   background-color: black;
   border-radius: 10px 10px 10px 10px;
   padding: 20px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 .product-detail img {
@@ -310,14 +310,15 @@ p.add {
 }
 
 .link-back {
-  font-family: "Urbanist", Arial, sans-serif;
-  font-size: 20px;
-  background-color: yellow;
-  border-radius: 10px 10px 10px 10px;
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  padding: 80px;
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border-style: none;  
 }
 
 .link-back:hover {

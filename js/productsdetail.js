@@ -27,3 +27,7 @@ console.log(detailProductsUrl);
 
         console.log(details); 
 })(); 
+
+document.getElementById("link-back").onclick = function () {
+        location.href = "products.html";
+    };
