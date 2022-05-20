@@ -1,5 +1,9 @@
 import { productsUrl } from "./constans/api.js";
 
+document.getElementById("link-back").onclick = function () {
+        location.href = "products.html";
+    };
+
 const queryString = document.location.search; 
 
 const params = new URLSearchParams(queryString);
@@ -22,12 +26,22 @@ console.log(detailProductsUrl);
         <img src=${details.image.url}>
         <p>${details.description}</p>
         <p>Price: ${details.price}</p>
-        <button class="cart"ADD TO CART</button>
+        <button class="add-to-cart">ADD TO CART</button>
         </div>`; 
 
         console.log(details); 
+
+        const favButton = document.querySelector(".detailproducts button"); 
+        console.log(event); 
+
+        favButton.addEventListener("click", handleClick); 
+
+        function handleClick() {
+                console.log(event); 
+        }
+        
+
 })(); 
 
-document.getElementById("link-back").onclick = function () {
-        location.href = "products.html";
-    };
+
+
