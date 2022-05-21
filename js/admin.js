@@ -7,6 +7,8 @@ const username = document.querySelector("#exampleInputEmail1");
 const password = document.querySelector("#exampleInputPassword1");
 const message = document.querySelector(".message-container");
 
+createMenu(); 
+
 form.addEventListener("submit", submitForm);
 
 function submitForm(event) {
