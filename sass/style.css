@@ -422,8 +422,8 @@ p.add {
 
 @media (max-width: 500px) {
   .product-detail img {
-      height: 350px;
-      width: 350px;
+      height: 340px;
+      width: 340px;
       margin: 10px;
       border-radius: 20px 20px 20px 20px;
   }

@@ -1,10 +1,6 @@
 import { productsUrl } from "./constans/api.js";
 import { getExistingFavs } from "./utils/favsFunction.js"; 
 
-document.getElementById("link-back").onclick = function () {
-        location.href = "products.html";
-    };
-
 const queryString = document.location.search; 
 
 const params = new URLSearchParams(queryString);
@@ -64,6 +60,12 @@ console.log(detailProductsUrl);
         }
 
 })(); 
+
+
+
+document.getElementById("go-to-cart").onclick = function () {
+        location.href = "cart.html";
+    };
 
 
 
