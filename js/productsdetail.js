@@ -61,7 +61,7 @@ console.log(detailProductsUrl);
                 }
         }
 
-        function getExistingFavs () {
+        /*function getExistingFavs () {
                 const favs = localStorage.getItem("favorites");
                 console.log(favs); 
 
@@ -71,7 +71,7 @@ console.log(detailProductsUrl);
                 else {
                         return JSON.parse(favs); 
                 }
-        }
+        } */
 
         function saveFavs(favs) {
                 localStorage.setItem("favorites", JSON.stringify(favs)); 
