@@ -6,3 +6,26 @@
 .fav-text {
     margin: 20px;
 }
+
+.price-box {
+    background-color: black;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    width: 200px;
+    height: 100px;
+    margin-left: 50px; 
+    margin-bottom: 25px;
+  }
+  
+  .total-text {
+    font-size: 22px;
+    margin: 20px; 
+    padding: 15px;
+  }
+  
+  .cart-price {
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: -40px;
+    padding: 10px;
+  }

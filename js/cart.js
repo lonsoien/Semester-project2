@@ -2,13 +2,13 @@ import { getExistingFavs } from "./utils/favsFunction.js";
 
 const favInCart = getExistingFavs();
 
+const cartContainer = document.querySelector(".container-products");
+
 if(favInCart.length === 0) {
     cartContainer.innerHTML = "You shopping cart is currently empty!";
 }
 
-const cartContainer = document.querySelector(".container-products");
-
-const cartProducts = document.querySelector(".cart-products"); 
+const cartPrice = document.querySelector(".cart-price"); 
 
 let total = 0; 
 
@@ -20,7 +20,7 @@ favInCart.forEach((favourites) => {
                 </div>`;   
 
                 total += parseInt(favourites.price);
-                cartProducts.innerHTML = `<p>${total}</p>`
+                cartPrice.innerHTML = `<p>${total}</p>`
               
 });
 
@@ -28,16 +28,3 @@ favInCart.forEach((favourites) => {
 document.getElementById("link-back").onclick = function () {
     location.href = "products.html";
 };
-
-
-
-/*
-<div class="cart-products">
-<div class="cart-header">
-<p>Products In Cart<p>
-<p>Qty<p>
-<p>Price<p> 
-</div> </p>
-
-*/
-
