@@ -1,6 +1,6 @@
 import displayMessage from "./components/displayMessage.js";
 import { saveToken, saveUser } from "./utils/storage.js";
-import { baseUrl } from "./api.js";
+import { baseUrl } from "./constans/api.js";
 
 const form = document.querySelector(".form");
 const username = document.querySelector("#exampleInputEmail1");

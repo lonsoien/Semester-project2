@@ -2,22 +2,27 @@ import { getExistingFavs } from "./utils/favsFunction.js";
 
 const addedInCart = getExistingFavs();
 
-console.log(addedInCart);
+const clearButton = document.querySelector("#clear");
+
+if(addedInCart.length === 0) {
+    cartContainer.innerHTML = "You shopping cart is currently empty!";
+}
 
 const cartContainer = document.querySelector(".container-products");
 
-if(addedInCart.length === 0) {
-    cartContainer.innerHTML = "Empty Cart!";
-}
-
-addedInCart.forEach((favorites) => {
+addedInCart.forEach((favourites) => {
     cartContainer.innerHTML += `<div class="detailproducts">
-                <img src="${favorites.image}">
-                 <h4>${favorites.title}</h4>
-                 <p>${favorites.price}kr</p>
-                </div>`                                          
+                <img src="${favourites.image}">
+                 <h4>${favourites.title}</h4>
+                 <p>${favourites.price}kr</p>
+                </div>`                                    
               
 });
+
+
+document.getElementById("link-back").onclick = function () {
+    location.href = "products.html";
+};
 
 
 

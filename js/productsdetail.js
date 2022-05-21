@@ -30,8 +30,6 @@ console.log(detailProductsUrl);
         <button class="add-to-cart" data-title="${details.title}" data-image="${details.image.url}" data-price="${details.price}">ADD TO CART</button>
         </div>`; 
 
-        console.log(details); 
-
         const favButton = document.querySelector(".detailproducts button");  
 
         favButton.addEventListener("click", handleClick); 
@@ -61,22 +59,9 @@ console.log(detailProductsUrl);
                 }
         }
 
-        /*function getExistingFavs () {
-                const favs = localStorage.getItem("favorites");
-                console.log(favs); 
-
-                if (favs === null) {
-                        return []; 
-                }
-                else {
-                        return JSON.parse(favs); 
-                }
-        } */
-
         function saveFavs(favs) {
                 localStorage.setItem("favorites", JSON.stringify(favs)); 
         }
-
 
 })(); 
 

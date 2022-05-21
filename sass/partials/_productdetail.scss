@@ -49,10 +49,57 @@
 
 .link-back:hover {
     color: black;
-    width: 250px;
+    width: 230px;
 }
 
 .add-to-cart {
-    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: fade-in($color: #e23cb8, $amount: 5);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.go-to-cart {
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin: 10px;
+    border-style: none;
+    width: 180px; 
+    transition: width 1s;
+    text-align: center;
+}
+
+.go-to-cart:hover {
+    color: black;
+    width: 230px;
+}
+
+@media (max-width: 500px) {
+    .product-detail img {
+        height: 350px;
+        width: 350px;
+        margin: 10px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    .product-detail h4 {
+        font-size: 22px;
+        color: white;
+    }
+    
+    .product-detail p {
+      font-size: 20px;
+      color: white;
+      margin: 15px;
+    }
+    
+    .product-detail a {
+        padding: 15px;
+        margin-top: 10px;
+        width: 200px;
+    }
 }
 

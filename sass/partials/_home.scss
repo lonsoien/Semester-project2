@@ -90,3 +90,25 @@ margin: 10px;
 .view:hover {
   width: 280px;
 }
+
+@media (max-width: 500px) {
+  .featured-container img {
+    height: 230px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    }
+    
+    .featured-container h4 {
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    }
+    
+    .featured-container p {
+    font-family: "Urbanist", Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+    }
+}
